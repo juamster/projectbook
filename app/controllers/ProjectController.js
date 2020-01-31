@@ -1,3 +1,4 @@
+// @ts-ignore
 import { ProjectService, projectService } from "../services/ProjectService.js"
 import { STORE } from "../store.js";
 
@@ -74,9 +75,10 @@ export class ProjectController {
     event.preventDefault(); // stops page from reloading
     let form = event.target;
     try {
-      // @ts-ignore
       projectService.createProject({
+        // @ts-ignore
         name: form.projectName.value,
+        // @ts-ignore
         description: form.projectDescription.value
       });
       // @ts-ignore
@@ -108,8 +110,11 @@ export class ProjectController {
       // @ts-ignore
       projectService.createContact({
         projectID: project.id,
+        // @ts-ignore
         name: form.contactName.value,
+        // @ts-ignore
         phone: form.contactPhone.value,
+        // @ts-ignore
         email: form.contactEmail.value
       });
       // @ts-ignore
@@ -130,7 +135,9 @@ export class ProjectController {
       // @ts-ignore
       projectService.createGroup({
         projectID: project.id,
+        // @ts-ignore
         name: form.groupName.value,
+        // @ts-ignore
         color: form.groupColor.value,
 
       });
