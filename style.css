@@ -1,0 +1,7 @@
+.group {
+  padding: .25rem;
+  color: white;
+  text-shadow: 1px 1px black;
+  display: inline-block;
+  margin: .25rem;
+}

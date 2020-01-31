@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Project Book</title>
+</head>
+
+<body>
+
+  <div>
+    <form onsubmit="app.projectController.createProject()">
+      <label for="projectName">Project Name</label>
+      <input name="projectName" type="text" required />
+      <label for="projectDescription">Project Description</label>
+      <input name="projectDescription" type="text" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <br>
+  <div>
+    <form onsubmit="app.projectController.createContact()">
+      <label for="contactName">Name:</label>
+      <input name="contactName" type="text" required />
+      <label for="contactPhone">Phone:</label>
+      <input name="contactPhone" type="tel" required />
+      <label for="contactEmail">Email:</label>
+      <input name="contactEmail" type="email" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <br>
+  <div>
+    <form onsubmit="app.projectController.createGroup()">
+      <label for="groupName">Name:</label>
+      <input name="groupName" type="text" required />
+      <label for="groupColor">Color:</label>
+      <input name="groupColor" type="color" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="projects">
+  </div>
+  <hr><br>
+  <div id="projectDetails">
+  </div>
+  <hr><br>
+  <div id="contacts">
+  </div>
+  <hr><br>
+  <div id="groups">
+  </div>
+
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
